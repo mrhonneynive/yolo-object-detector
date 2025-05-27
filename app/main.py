@@ -10,5 +10,5 @@ async def root():
 
 @app.post("/detect/")
 @app.post("/detect/{label}")
-async def detect_image(file: Annotated[UploadFile, File()],label: str | None = None):
+async def detect_image(file: Annotated[UploadFile, File()], label: str | None = None):
   return {"message": "it works"}
